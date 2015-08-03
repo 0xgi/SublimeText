@@ -1,0 +1,30 @@
+<!-- var 0xgi = {author: Le Phu Hai,license: MIT } -->
+
+<snippet>
+	<content><![CDATA[
+	var ${1:ReactComponent} = React.createClass({
+		getDefaultProps: function() {
+			return {
+				${2:name}: '${3:value}'
+			}
+		},
+		propTypes: {
+			${2:name}: React.PropTypes.string.isRequired
+			${4:// https://facebook.github.io/react/docs/reusable-components.html}
+		},
+		render: function() {
+			return (<div className="${5:}">Hello ,{this.props.${2:name}}</div>)
+		}
+	});
+
+	var ${6:reactEl} = <${1:ReactComponent} ${2:name}="${7:value}"/>
+
+	React.render(${6:reactEl},document.getElementById('${8:content}'))
+	
+	${9:}
+]]></content>
+	<tabTrigger>giReactCom</tabTrigger>
+	<!-- <scope>text.html</scope> -->
+	<!-- <scope>source.js</scope> -->
+	<description>React component generate</description>
+</snippet>
