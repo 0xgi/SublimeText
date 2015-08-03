@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>${1:0xgi HTML}</title>
+
+	<link rel="stylesheet" href="./${2:style.css}"/>
+	<script>
+		function init() {
+			${5:}
+		}
+	</script>
+</head>
+<body${4: onload="init()"}>
+	${6:}
+	<script src="./${3:script.js}"></script>
+</body>
+</html>
+]]></content>
+	<tabTrigger>gihtml</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
