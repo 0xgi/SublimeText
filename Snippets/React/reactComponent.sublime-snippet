@@ -5,7 +5,7 @@
 	var ${1:ReactComponent} = React.createClass({
 		getDefaultProps: function() {
 			return {
-				${2:name}: '${3:value}'
+				${2:name}: '${3:defaultValue}'
 			}
 		},
 		propTypes: {
@@ -17,7 +17,7 @@
 		}
 	});
 
-	var ${6:reactEl} = <${1:ReactComponent} ${2:name}="${7:value}"/>
+	var ${6:reactEl} = <${1:ReactComponent} ${2:name}="${7:newValue}"/>
 
 	React.render(${6:reactEl},document.getElementById('${8:content}'))
 	

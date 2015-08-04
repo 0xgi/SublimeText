@@ -2,14 +2,12 @@
 
 <snippet>
 	<content><![CDATA[
-	var ${1:reactEl} = React.createElement({
-		'${2:type}', {
-			${3:props}: '${4:value}'
-		}, '${5:children}'
-	})
+	var ${1:reactEl} = React.createElement('${2:type}', {
+		${3:props}: ${4:value}
+	},${5:children});
 
-	React.render(<${1:reactEl} />, ${6:document.getElementById('${7:content}')});
-
+	React.render(${1:reactEl}, ${6:document.getElementById('${7:content}')})
+	
 	${8:}
 ]]></content>
 
