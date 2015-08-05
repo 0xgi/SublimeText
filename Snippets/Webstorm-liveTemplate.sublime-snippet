@@ -1,0 +1,60 @@
+<snippet>
+	<content><![CDATA[
+		<templateSet group="${1:groupName-Template}">
+			<template name="${2:templateName}" 
+				
+				value="${9:console.log('Hello Live Template Webstorm')}" 
+				
+				shortcut="${3:TAB}" 
+				description="${4:Console.log function}" 
+				toReformat="${5:false}" 
+				toShortenFQNames="${6:false}"> 
+				deactivated="${7:true}"
+
+				<context>
+			      <option name="HTML_TEXT" value="${8:true}" />
+			      <option name="HTML" value="${8:true}" />
+			      <option name="XSL_TEXT" value="${8:true}" />
+			      <option name="XML" value="${8:true}" />
+			      <option name="XML_TEXT" value="${8:true}" />
+			      <option name="JSON" value="${8:true}" />
+			      <option name="Bash" value="${8:true}" />
+			      <option name="JSP" value="${8:true}" />
+			      <option name="CSS_PROPERTY_VALUE" value="${8:true}" />
+			      <option name="CSS_DECLARATION_BLOCK" value="${8:true}" />
+			      <option name="CSS_RULESET_LIST" value="${8:true}" />
+			      <option name="CSS" value="${8:true}" />
+			      <option name="CUCUMBER_FEATURE_FILE" value="${8:true}" />
+			      <option name="JAVA_SCRIPT" value="${8:true}" />
+			      <option name="JS_EXPRESSION" value="${8:true}" />
+			      <option name="JSX_HTML" value="${8:true}" />
+			      <option name="JS_STATEMENT" value="${8:true}" />
+			      <option name="TypeScript" value="${8:true}" />
+			      <option name="Handlebars" value="${8:true}" />
+			      <option name="HAML" value="${8:true}" />
+			      <option name="JADE" value="${8:true}" />
+			      <option name="CoffeeScript" value="${8:true}" />
+			      <option name="DART" value="${8:true}" />
+			      <option name="OTHER" value="${8:true}" />
+    			</context>
+			</template>
+		</templateSet>
+
+		${10:}
+
+		<!-- 
+		Live templates let you insert frequently-used or custom code constructs into your source code file quickly, efficiently, and accurately. They contain predefined code fragments.
+		Live templates are stored in the following location:
+
+		Windows: <your home directory>\.<product name><version number>\config\templates
+		Linux: ~/.<product name><version number>/config/templates
+		OS X: ~/Library/Preferences/<product name><version number>/templates
+		-->
+
+]]></content>
+	<tabTrigger>giws</tabTrigger>
+	<!-- <scope>text.xml</scope> -->
+	<description>Webstorm: Live template structure</description>
+</snippet>
+
+	
