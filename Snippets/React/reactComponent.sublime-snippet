@@ -28,9 +28,24 @@
 				${5:title}: ${10:e}.target.value
 			})
 		},
+
 		render: function() {
-			return (<div className="${11:}">Hello ,{this.props.${2:name}}</div>)
+			return (
+				<div> className="${11:}">Hello ,{this.props.${2:name}}
+				
+				</div>
+			)
 		}
+
+		// Render to child component
+		<!-- render: function() {
+			return (
+				<div> <otherComponentChild 
+					title = {this.state.title} 
+					src = {this.state.src} />
+				</div>
+			)
+		} -->
 	});
 
 	var ${6:reactEl} = <${1:ReactComponent} ${2:name}="${12:newValue}"/>
