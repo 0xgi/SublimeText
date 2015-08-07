@@ -12,16 +12,32 @@
 			${2:name}: React.PropTypes.string.isRequired
 			${4:// https://facebook.github.io/react/docs/reusable-components.html}
 		},
+		getInitialState() {
+			return {
+				${5:title}: this.props.data.${5:title},
+				${6:src}: this.props.data.${6:src}
+			}
+		},
+		${7:onClick()} {
+			this.setState({
+				${6:src}: ${8:'https://github.com/0xgi'}
+			})
+		},
+		${9:setTitle}: function(${10:e}) {
+			this.setState({
+				${5:title}: ${10:e}.target.value
+			})
+		},
 		render: function() {
-			return (<div className="${5:}">Hello ,{this.props.${2:name}}</div>)
+			return (<div className="${11:}">Hello ,{this.props.${2:name}}</div>)
 		}
 	});
 
-	var ${6:reactEl} = <${1:ReactComponent} ${2:name}="${7:newValue}"/>
+	var ${6:reactEl} = <${1:ReactComponent} ${2:name}="${12:newValue}"/>
 
-	React.render(${6:reactEl},document.getElementById('${8:content}'))
+	React.render(${6:reactEl},document.getElementById('${13:content}'))
 	
-	${9:}
+	${14:}
 ]]></content>
 	<tabTrigger>giReactCom</tabTrigger>
 	<!-- <scope>text.html</scope> -->
