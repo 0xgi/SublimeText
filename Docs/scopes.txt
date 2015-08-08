@@ -66,4 +66,4 @@ XSL: text.xml.xsl
 YAML: source.yaml
 
 
-This `scopes` was taken from `[iambibhas](https://gist.github.com/iambibhas/4705378)` and modified to suite our purposes.
+This scopes was taken from [iambibhas](https://gist.github.com/iambibhas/4705378) and modified to suite our purposes.
